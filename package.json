@@ -13,8 +13,8 @@
 		"zip:firefox": "wxt zip -b firefox",
 		"compile": "tsc --noEmit",
 		"postinstall": "wxt prepare",
-		"lint": "npx @biomejs/biome lint --write",
-		"format": "npx @biomejs/biome format --write"
+		"lint": "pnpm biome lint --write",
+		"format": "pnpm biome format --write"
 	},
 	"dependencies": {
 		"@webext-core/messaging": "^2.2.0",

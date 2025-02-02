@@ -5,9 +5,15 @@
 
 ## debug
 
-web-extでアドオンを起動するとホットリロードしてくれます。
+```
+$ pnpm run build:firefox
+$ pnpm run dev:firefox
+```
+
+ビルド結果に対してweb-extで起動したりLintをかけることもできます。。
 
 ```
+$ cd .output/firefox-mv2
 $ web-ext run
 $ web-ext lint
 ```
