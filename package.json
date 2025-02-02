@@ -17,6 +17,7 @@
 		"format": "npx @biomejs/biome format --write"
 	},
 	"dependencies": {
+		"@webext-core/messaging": "^2.2.0",
 		"douhin_extraction": "github:ansark88/doujin_extraction",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0"

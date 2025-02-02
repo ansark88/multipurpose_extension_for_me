@@ -1,3 +1,13 @@
-# WXT + React
+# 概要
 
-This template should help get you started developing with React in WXT.
+自分の作業を便利するために作成したFirefoxアドオンです。WXT+Reactで作成しています。
+
+
+## debug
+
+web-extでアドオンを起動するとホットリロードしてくれます。
+
+```
+$ web-ext run
+$ web-ext lint
+```
