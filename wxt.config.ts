@@ -4,4 +4,9 @@ import { defineConfig } from "wxt";
 export default defineConfig({
 	extensionApi: "webextension-polyfill",
 	modules: ["@wxt-dev/module-react"],
+	dev: {
+		server: {
+			port: 3010,
+		},
+	},
 });
