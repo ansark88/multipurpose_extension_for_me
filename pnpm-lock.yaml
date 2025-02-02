@@ -13,7 +13,7 @@ importers:
         version: 2.2.0
       douhin_extraction:
         specifier: github:ansark88/doujin_extraction
-        version: https://codeload.github.com/ansark88/doujin_extraction/tar.gz/d02fc5b39112db3213df076aa29f26dc98416234
+        version: https://codeload.github.com/ansark88/doujin_extraction/tar.gz/a009ce17ac4327e6ec934ac70d9a6605d1bbd911
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -1118,9 +1118,9 @@ packages:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
 
-  douhin_extraction@https://codeload.github.com/ansark88/doujin_extraction/tar.gz/d02fc5b39112db3213df076aa29f26dc98416234:
-    resolution: {tarball: https://codeload.github.com/ansark88/doujin_extraction/tar.gz/d02fc5b39112db3213df076aa29f26dc98416234}
-    version: 0.2.0
+  douhin_extraction@https://codeload.github.com/ansark88/doujin_extraction/tar.gz/a009ce17ac4327e6ec934ac70d9a6605d1bbd911:
+    resolution: {tarball: https://codeload.github.com/ansark88/doujin_extraction/tar.gz/a009ce17ac4327e6ec934ac70d9a6605d1bbd911}
+    version: 0.2.1
 
   dtrace-provider@0.8.8:
     resolution: {integrity: sha512-b7Z7cNtHPhH9EJhNNbbeqTcXB8LGFFZhq1PGgEvpeHlzd36bhbdTWoE/Ba/YguqpBSlAPKnARWhVlhunCMwfxg==}
@@ -3403,7 +3403,7 @@ snapshots:
 
   dotenv@16.4.7: {}
 
-  douhin_extraction@https://codeload.github.com/ansark88/doujin_extraction/tar.gz/d02fc5b39112db3213df076aa29f26dc98416234: {}
+  douhin_extraction@https://codeload.github.com/ansark88/doujin_extraction/tar.gz/a009ce17ac4327e6ec934ac70d9a6605d1bbd911: {}
 
   dtrace-provider@0.8.8:
     dependencies:

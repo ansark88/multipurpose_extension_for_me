@@ -7,7 +7,7 @@ interface ProtocolMap {
 	isCircleMS(): boolean;
 
 	// to background
-	createUser(body: CreateUserBody): void;
+	createUser(body: CreateUserBody): boolean;
 }
 
 export const { sendMessage, onMessage } =

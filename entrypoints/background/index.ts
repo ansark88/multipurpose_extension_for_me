@@ -1,31 +1,28 @@
 import type { CreateUserBody } from "@/model/circle_model";
 import { onMessage } from "../messaging/messaging";
 
-function handleCreateUser(body: CreateUserBody) {
-	// try {
-	// 	const response = await fetch("http://localhost:3000/users", {
-	// 		method: "POST",
-	// 		headers: {
-	// 			"Content-Type": "application/json",
-	// 		},
-	// 		body: JSON.stringify(message.body),
-	// 	});
+async function handleCreateUser(body: CreateUserBody) {
+	try {
+		const response = await fetch("http://localhost:3000/users", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(body),
+		});
 
-	// 	const result = await response.json();
-	// 	console.log("Response:", result);
-	// 	return result;
-	// } catch (error) {
-	// 	console.error("Error:", error);
-	// 	throw error;
-	// }
-
-	// Return an array of all responses back to popup.
-	// return responses;
-	return "";
+		const result = await response.json();
+		console.log("Response:", result);
+		return true;
+	} catch (error) {
+		console.error("Error:", error);
+		return false;
+	}
 }
 
 onMessage("createUser", (message) => {
-	handleCreateUser(message.data);
+	// Todo: error handling
+	return handleCreateUser(message.data);
 });
 
 // 最初に実行される

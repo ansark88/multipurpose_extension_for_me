@@ -29,6 +29,7 @@ function App() {
 		return true;
 	};
 
+	// Todo: circle.msだけじゃなくskeb,fantia,fanboxからリンクを取り出せるようにしたい
 	const extractLinks = async () => {
 		const activeTab = await browser.tabs.query({
 			active: true,
@@ -81,7 +82,11 @@ function App() {
 			circleInfo.links.map((item) => [item.service, item]),
 		);
 
-		const getID = (platform: Platform) => {
+		const getID = (platform: Platform): string | null => {
+			if (!Object.hasOwn(linkHash, platform)) {
+				return null;
+			}
+
 			return extractCircleID(platform, linkHash[platform].href) || null;
 		};
 
@@ -96,7 +101,11 @@ function App() {
 
 		console.log(body);
 
-		await sendMessage("createUser", body);
+		const sendResult = await sendMessage("createUser", body);
+
+		sendResult
+			? setResult("Appへ送信しました")
+			: setResult("Appへの送信エラーになりました");
 	};
 
 	return (
@@ -123,7 +132,12 @@ function App() {
 					<button type="button" id="copy" onClick={copyLinksSummary}>
 						コピー
 					</button>
-					<button type="button" id="post_dj" hidden={true} onClick={sendApp}>
+					<button
+						type="button"
+						id="post_dj"
+						hidden={!circleInfo}
+						onClick={sendApp}
+					>
 						Appに送信
 					</button>
 				</div>
