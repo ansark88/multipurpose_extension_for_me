@@ -13,7 +13,7 @@ importers:
         version: 2.2.0
       douhin_extraction:
         specifier: github:ansark88/doujin_extraction
-        version: https://codeload.github.com/ansark88/doujin_extraction/tar.gz/a009ce17ac4327e6ec934ac70d9a6605d1bbd911
+        version: https://codeload.github.com/ansark88/doujin_extraction/tar.gz/c1953433eadcd97dd7f077a500f96511c3c730e5
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -29,10 +29,10 @@ importers:
         version: 0.0.280
       '@types/react':
         specifier: ^19.0.1
-        version: 19.0.7
+        version: 19.0.10
       '@types/react-dom':
         specifier: ^19.0.2
-        version: 19.0.3(@types/react@19.0.7)
+        version: 19.0.4(@types/react@19.0.10)
       '@wxt-dev/module-react':
         specifier: ^1.1.2
         version: 1.1.3(vite@6.0.7(@types/node@22.10.7)(jiti@1.21.7))(wxt@0.19.24(@types/node@22.10.7)(rollup@4.31.0))
@@ -693,13 +693,13 @@ packages:
   '@types/node@22.10.7':
     resolution: {integrity: sha512-V09KvXxFiutGp6B7XkpaDXlNadZxrzajcY50EuoLIpQ6WWYCSvf19lVIazzfIzQvhUN2HjX12spLojTnhuKlGg==}
 
-  '@types/react-dom@19.0.3':
-    resolution: {integrity: sha512-0Knk+HJiMP/qOZgMyNFamlIjw9OFCsyC2ZbigmEEyXXixgre6IQpm/4V+r3qH4GC1JPvRJKInw+on2rV6YZLeA==}
+  '@types/react-dom@19.0.4':
+    resolution: {integrity: sha512-4fSQ8vWFkg+TGhePfUzVmat3eC14TXYSsiiDSLI0dVLsrm9gZFABjPy/Qu6TKgl1tq1Bu1yDsuQgY3A3DOjCcg==}
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@19.0.7':
-    resolution: {integrity: sha512-MoFsEJKkAtZCrC1r6CM8U22GzhG7u2Wir8ons/aCKH6MBdD1ibV24zOSSkdZVUKqN5i396zG5VKLYZ3yaUZdLA==}
+  '@types/react@19.0.10':
+    resolution: {integrity: sha512-JuRQ9KXLEjaUNjTWpzuR231Z2WpIwczOkBEIvbHNCzQefFIT0L8IqE6NV6ULLyC1SI/i234JnDoMkfg+RjQj2g==}
 
   '@types/webextension-polyfill@0.12.1':
     resolution: {integrity: sha512-xPTFWwQ8BxPevPF2IKsf4hpZNss4LxaOLZXypQH4E63BDLmcwX/RMGdI4tB4VO4Nb6xDBH3F/p4gz4wvof1o9w==}
@@ -1118,9 +1118,9 @@ packages:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
 
-  douhin_extraction@https://codeload.github.com/ansark88/doujin_extraction/tar.gz/a009ce17ac4327e6ec934ac70d9a6605d1bbd911:
-    resolution: {tarball: https://codeload.github.com/ansark88/doujin_extraction/tar.gz/a009ce17ac4327e6ec934ac70d9a6605d1bbd911}
-    version: 0.2.1
+  douhin_extraction@https://codeload.github.com/ansark88/doujin_extraction/tar.gz/c1953433eadcd97dd7f077a500f96511c3c730e5:
+    resolution: {tarball: https://codeload.github.com/ansark88/doujin_extraction/tar.gz/c1953433eadcd97dd7f077a500f96511c3c730e5}
+    version: 0.2.2
 
   dtrace-provider@0.8.8:
     resolution: {integrity: sha512-b7Z7cNtHPhH9EJhNNbbeqTcXB8LGFFZhq1PGgEvpeHlzd36bhbdTWoE/Ba/YguqpBSlAPKnARWhVlhunCMwfxg==}
@@ -2970,11 +2970,11 @@ snapshots:
     dependencies:
       undici-types: 6.20.0
 
-  '@types/react-dom@19.0.3(@types/react@19.0.7)':
+  '@types/react-dom@19.0.4(@types/react@19.0.10)':
     dependencies:
-      '@types/react': 19.0.7
+      '@types/react': 19.0.10
 
-  '@types/react@19.0.7':
+  '@types/react@19.0.10':
     dependencies:
       csstype: 3.1.3
 
@@ -3403,7 +3403,7 @@ snapshots:
 
   dotenv@16.4.7: {}
 
-  douhin_extraction@https://codeload.github.com/ansark88/doujin_extraction/tar.gz/a009ce17ac4327e6ec934ac70d9a6605d1bbd911: {}
+  douhin_extraction@https://codeload.github.com/ansark88/doujin_extraction/tar.gz/c1953433eadcd97dd7f077a500f96511c3c730e5: {}
 
   dtrace-provider@0.8.8:
     dependencies:
