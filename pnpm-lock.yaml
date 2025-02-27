@@ -13,7 +13,7 @@ importers:
         version: 2.2.0
       douhin_extraction:
         specifier: github:ansark88/doujin_extraction
-        version: https://codeload.github.com/ansark88/doujin_extraction/tar.gz/a009ce17ac4327e6ec934ac70d9a6605d1bbd911
+        version: https://codeload.github.com/ansark88/doujin_extraction/tar.gz/c1953433eadcd97dd7f077a500f96511c3c730e5
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -25,8 +25,8 @@ importers:
         specifier: 1.9.4
         version: 1.9.4
       '@types/chrome':
-        specifier: ^0.0.280
-        version: 0.0.280
+        specifier: ^0.0.306
+        version: 0.0.306
       '@types/react':
         specifier: ^19.0.1
         version: 19.0.7
@@ -672,6 +672,9 @@ packages:
   '@types/chrome@0.0.280':
     resolution: {integrity: sha512-AotSmZrL9bcZDDmSI1D9dE7PGbhOur5L0cKxXd7IqbVizQWCY4gcvupPUVsQ4FfDj3V2tt/iOpomT9EY0s+w1g==}
 
+  '@types/chrome@0.0.306':
+    resolution: {integrity: sha512-95kgcqvTNcaZCXmx/kIKY6uo83IaRNT3cuPxYqlB2Iu+HzKDCP4t7TUe7KhJijTdibcvn+SzziIcfSLIlgRnhQ==}
+
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
@@ -1118,9 +1121,9 @@ packages:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
 
-  douhin_extraction@https://codeload.github.com/ansark88/doujin_extraction/tar.gz/a009ce17ac4327e6ec934ac70d9a6605d1bbd911:
-    resolution: {tarball: https://codeload.github.com/ansark88/doujin_extraction/tar.gz/a009ce17ac4327e6ec934ac70d9a6605d1bbd911}
-    version: 0.2.1
+  douhin_extraction@https://codeload.github.com/ansark88/doujin_extraction/tar.gz/c1953433eadcd97dd7f077a500f96511c3c730e5:
+    resolution: {tarball: https://codeload.github.com/ansark88/doujin_extraction/tar.gz/c1953433eadcd97dd7f077a500f96511c3c730e5}
+    version: 0.2.2
 
   dtrace-provider@0.8.8:
     resolution: {integrity: sha512-b7Z7cNtHPhH9EJhNNbbeqTcXB8LGFFZhq1PGgEvpeHlzd36bhbdTWoE/Ba/YguqpBSlAPKnARWhVlhunCMwfxg==}
@@ -2952,6 +2955,11 @@ snapshots:
       '@types/filesystem': 0.0.36
       '@types/har-format': 1.2.16
 
+  '@types/chrome@0.0.306':
+    dependencies:
+      '@types/filesystem': 0.0.36
+      '@types/har-format': 1.2.16
+
   '@types/estree@1.0.6': {}
 
   '@types/filesystem@0.0.36':
@@ -3403,7 +3411,7 @@ snapshots:
 
   dotenv@16.4.7: {}
 
-  douhin_extraction@https://codeload.github.com/ansark88/doujin_extraction/tar.gz/a009ce17ac4327e6ec934ac70d9a6605d1bbd911: {}
+  douhin_extraction@https://codeload.github.com/ansark88/doujin_extraction/tar.gz/c1953433eadcd97dd7f077a500f96511c3c730e5: {}
 
   dtrace-provider@0.8.8:
     dependencies:
