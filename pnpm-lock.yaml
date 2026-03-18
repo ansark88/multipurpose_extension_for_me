@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@webext-core/messaging':
         specifier: ^2.2.0
-        version: 2.2.0
+        version: 2.3.0
       douhin_extraction:
         specifier: github:ansark88/doujin_extraction
         version: https://codeload.github.com/ansark88/doujin_extraction/tar.gz/3e594f14c58706b514f111728e82b56eb9013587
@@ -657,8 +657,8 @@ packages:
   '@webext-core/match-patterns@1.0.3':
     resolution: {integrity: sha512-NY39ACqCxdKBmHgw361M9pfJma8e4AZo20w9AY+5ZjIj1W2dvXC8J31G5fjfOGbulW9w4WKpT8fPooi0mLkn9A==}
 
-  '@webext-core/messaging@2.2.0':
-    resolution: {integrity: sha512-CRKFSH8ZAp55QpzfseOO/RlW6fAVSGWYNJK1j23khB855Ba9wHu8PB3uuqMVZtfEAwAmsw/2U8HIkony5adFBQ==}
+  '@webext-core/messaging@2.3.0':
+    resolution: {integrity: sha512-gChSVKdRs7JEq5hFH0jVROSvTq+sKq9afXTA/gBswep3RWNLhXyDsXFlvPMkYbmML1XZ8QKKC9ou2MlCKRZwSQ==}
 
   '@wxt-dev/module-react@1.2.2':
     resolution: {integrity: sha512-+lRLi1r9dAXpLySWSIWHLJ1h/nFzR20iQnx3RNrKyA6oJg4+ClOluVXozHjfPg9Okfy/umtffiOopGayASrg6w==}
@@ -2757,7 +2757,7 @@ snapshots:
 
   '@webext-core/match-patterns@1.0.3': {}
 
-  '@webext-core/messaging@2.2.0':
+  '@webext-core/messaging@2.3.0':
     dependencies:
       serialize-error: 11.0.3
       uid: 2.0.2
