@@ -27,26 +27,23 @@ const extractLinks = (): Link[] => {
 		document.getElementsByClassName("item")[0].getElementsByTagName("a"),
 	);
 
-	return links
-		.filter((link) => {
-			try {
-				const url = new URL(link.href);
-				return getPlatformByDomain(url.hostname);
-			} catch (e) {
-				console.log(e);
-				return false;
-			}
-		})
-		.map((link) => {
+	return links.flatMap((link) => {
+		try {
 			const url = new URL(link.href);
-			const newLink: Link = {
-				service: getPlatformByDomain(url.hostname),
-				href: link.href,
-				text: link?.textContent?.trim() || link.href,
-			};
-
-			return newLink;
-		});
+			const service = getPlatformByDomain(url.hostname);
+			if (!service) return [];
+			return [
+				{
+					service,
+					href: link.href,
+					text: link?.textContent?.trim() || link.href,
+				},
+			];
+		} catch (e) {
+			console.log(e);
+			return [];
+		}
+	});
 };
 
 // 最初に実行される

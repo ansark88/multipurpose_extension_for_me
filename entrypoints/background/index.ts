@@ -1,9 +1,11 @@
 import type { CreateUserBody } from "@/model/circle_model";
 import { onMessage } from "../messaging/messaging";
 
+const API_BASE_URL = "http://localhost:3000";
+
 async function handleCreateUser(body: CreateUserBody) {
 	try {
-		const response = await fetch("http://localhost:3000/users", {
+		const response = await fetch(`${API_BASE_URL}/users`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
