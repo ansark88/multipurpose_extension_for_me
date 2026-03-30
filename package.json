@@ -14,7 +14,8 @@
 		"compile": "tsc --noEmit",
 		"postinstall": "wxt prepare",
 		"lint": "pnpm biome lint --write",
-		"format": "pnpm biome format --write"
+		"format": "pnpm biome format --write",
+		"lint:extension": "web-ext lint -s .output/firefox-mv2"
 	},
 	"dependencies": {
 		"@webext-core/messaging": "^2.2.0",
@@ -29,6 +30,7 @@
 		"@types/react-dom": "^19.0.2",
 		"@wxt-dev/module-react": "^1.1.2",
 		"typescript": "^5.6.3",
+		"web-ext": "^10.0.0",
 		"wxt": "^0.20.20"
 	}
 }
