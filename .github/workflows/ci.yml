@@ -25,6 +25,9 @@ jobs:
 
       - run: pnpm install --frozen-lockfile --ignore-scripts
 
+      - name: Prepare WXT
+        run: pnpm wxt prepare
+
       - name: Type check
         run: pnpm compile
 
