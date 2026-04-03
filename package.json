@@ -1,6 +1,6 @@
 {
-	"name": "wxt-react-starter",
-	"description": "manifest.json description",
+	"name": "multipurpose-extension-for-me",
+	"description": "同人作品管理用ブラウザ拡張機能",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",

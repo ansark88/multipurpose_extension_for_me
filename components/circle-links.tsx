@@ -1,13 +1,13 @@
 import type { Link } from "@/model/circle_model";
 import { CircleLink } from "./circle-link";
 
-interface props {
+interface CircleLinksProps {
 	links: Link[];
 }
 
-export const CircleLinks: React.FC<props> = ({ links }) => {
+export const CircleLinks: React.FC<CircleLinksProps> = ({ links }) => {
 	const listItems = links.map((link) => (
-		<li key={link.text}>
+		<li key={link.href}>
 			<CircleLink url={link.href} text={link.text} />
 		</li>
 	));
