@@ -1,10 +1,12 @@
 import "./App.css";
 import { CircleLinks } from "@/components/circle-links";
 import { useCircleExtraction } from "./useCircleExtraction";
+import { useRelatedPages } from "./useRelatedPages";
 
 function App() {
 	const { result, circleInfo, extractLinks, copyLinksSummary, sendApp } =
 		useCircleExtraction();
+	const { relatedLinks } = useRelatedPages();
 
 	return (
 		<div>
@@ -44,6 +46,25 @@ function App() {
 					<CircleLinks links={circleInfo.links} />
 				)}
 			</div>
+
+			{relatedLinks.length > 0 && (
+				<div id="related-pages">
+					<h3>関連ページ</h3>
+					<ul>
+						{relatedLinks.map((link) => (
+							<li key={link.url} className="link-item">
+								<a
+									href={link.url}
+									target="_blank"
+									rel="noreferrer"
+								>
+									{link.label}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+			)}
 		</div>
 	);
 }
