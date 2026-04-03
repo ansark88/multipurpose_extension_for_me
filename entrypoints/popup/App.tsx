@@ -53,11 +53,7 @@ function App() {
 					<ul>
 						{relatedLinks.map((link) => (
 							<li key={link.url} className="link-item">
-								<a
-									href={link.url}
-									target="_blank"
-									rel="noreferrer"
-								>
+								<a href={link.url} target="_blank" rel="noreferrer">
 									{link.label}
 								</a>
 							</li>

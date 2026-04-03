@@ -126,10 +126,7 @@ function App() {
 						}}
 					>
 						<strong>{rule.domain}</strong>
-						<button
-							type="button"
-							onClick={() => removeDomain(rule.domain)}
-						>
+						<button type="button" onClick={() => removeDomain(rule.domain)}>
 							ドメインを削除
 						</button>
 					</div>
@@ -150,9 +147,7 @@ function App() {
 								</span>
 								<button
 									type="button"
-									onClick={() =>
-										removeLink(rule.domain, link.url)
-									}
+									onClick={() => removeLink(rule.domain, link.url)}
 								>
 									削除
 								</button>

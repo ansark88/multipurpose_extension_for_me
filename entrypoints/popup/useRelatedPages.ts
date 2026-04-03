@@ -22,8 +22,7 @@ export function useRelatedPages() {
 					return;
 				}
 
-				const result =
-					await browser.storage.local.get(RELATED_PAGE_RULES_KEY);
+				const result = await browser.storage.local.get(RELATED_PAGE_RULES_KEY);
 				const data = result[RELATED_PAGE_RULES_KEY];
 				if (!Array.isArray(data)) return;
 				const rules = data as RelatedPageRule[];
