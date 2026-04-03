@@ -43,14 +43,17 @@ export function useCircleExtraction() {
 				undefined,
 				activeTab[0].id,
 			);
-			info.links = info.links.filter((link) => filterCircleLink(link));
+			const filtered = {
+				...info,
+				links: info.links.filter((link) => filterCircleLink(link)),
+			};
 
-			if (info.links.length === 0) {
+			if (filtered.links.length === 0) {
 				setResult("該当するリンクが見つかりませんでした");
 			}
 
 			// ここまで残ったリンクはsummaryとして表示し、さらにAppに送信する元データとしても使う
-			setCircleInfo(info);
+			setCircleInfo(filtered);
 		} catch (e) {
 			console.log(e);
 			setResult(`ページの解析中にエラー発生しました。${e}`);
@@ -88,8 +91,6 @@ export function useCircleExtraction() {
 			twitterId: getID(PlatformList.twitter),
 			pixivId: getID(PlatformList.pixiv),
 		};
-
-		console.log(body);
 
 		const sendResult = await sendMessage("createUser", body);
 
